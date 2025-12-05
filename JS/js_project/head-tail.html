@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Game for fun</title></head>
+    <body>
+        <button onclick="alert(flip())">
+            Flip the coin
+        </button>
+
+        <button onclick="alert(guessHead())">Head</button>
+        <button onclick="alert(guessTail())">Tail</button>
+        
+        <script>
+
+            // condition to show result head or tail so we can take it to compare in another function 
+            let result = '';
+            function flip (){
+            let theRandom = Math.random();
+                {
+                    if (theRandom <= 0.5)
+                    {
+                        result = 'Head';
+                    }else if (theRandom > 0.5) {
+                        result = 'Tail';
+                    }
+                return result ;
+                }
+            }
+
+
+            // Condition Lose or Win 
+            let final= '';
+            function guessHead (){
+                if (result === 'Head')
+                {
+                    final = 'Win';
+                }else
+                {
+                    final = 'Lose';
+                }
+                return final;
+            }
+
+            function guessTail (){
+                if (result === 'Tail')
+                {
+                    final = 'Win';
+                }
+                else 
+                {
+                    final = 'Lose';
+                }
+                return final;
+            }
+            
+        </script>
+    </body>
+</html>

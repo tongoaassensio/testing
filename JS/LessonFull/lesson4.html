@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+
+            <button onclick="alert (goodMorning())"> Click me if your crush no sending message for good morning</button>
+
+        </div>
+
+
+        <script>
+            //if else shortcut
+           let result =  true ?  'truthy' : 'falthy';
+           console.log(result);
+
+           // True shortcut 
+            const cartQuantity = 5;
+
+            if (cartQuantity){
+                console.log(true);
+            }
+
+            // &&
+            const letsee = false && console.log("Art tongan")
+            console.log(letsee);
+
+            const currency = 'USD' || 'EUR' ;
+            console.log(currency);
+
+            //Do the challenge
+
+            // Real Time Sending message 
+            function goodMorning ()
+            {
+            const name = 'Tongan' 
+            let hour = new Date().getHours();
+            let message = '';
+
+                if (hour > 6 && hour < 12){
+                    message = (`Good morning ${name}`);
+                }else if (hour > 13 && hour < 17){
+                    message = (`Good Afternoon ${name}`);
+                }else 
+                {
+                    message = (`Good Eveniing ${name}`);
+                }
+                
+            return message;
+            }
+
+           
+        
+            
+
+
+
+
+
+        </script>
+    </body>
+</html>

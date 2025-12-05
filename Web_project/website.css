@@ -1,0 +1,15 @@
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.style{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    border-style: inherit;
+}

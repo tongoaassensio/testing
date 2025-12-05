@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head> </head>
+    <body>
+        <script>
+
+            // Exercise 2 push the temperature above 30 to new array 
+            const temperatures = [28, 32, 25, 30, 35, 29, 31];
+            const above = [];
+            for (let i = 0 ; i < temperatures.length ; i++)
+            {
+                if (temperatures[i] >= 30 )
+                {
+                    above.push(temperatures[i])
+                }
+            }
+            console.log(above);
+             /* Use Method 2
+             //------------- 2  filter: just select what we want 
+            const temperature = [28, 32, 25, 30, 35, 29, 31];
+
+            const abov = temperatures.filter(temp => temp >= 30);
+
+            console.log(abov);
+             */
+
+
+
+            // Exercises 3 count the color 
+            const colors = ["red", "blue", "red", "green", "blue", "red", "yellow"];
+            const count= {
+                red: 0,
+                blue: 0,
+                green: 0,
+                yellow: 0,
+            };
+            for (let i = 0 ; i <= colors.length ; i++)
+            {
+                if (colors[i] === 'red')
+                {
+                    count.red+=1;
+                }
+                else if (colors[i] === 'blue')
+                {
+                    count.blue +=1;
+                }
+                else if (colors[i] === 'green')
+                {
+                    count.green+=1;
+                }
+                else if (colors === 'yellow')
+                {
+                    count.yellow +=1 ;
+                }
+            }
+            console.log(count);
+
+            /*  Usee method 3
+            //-------------3 reduce: loop to calculate something 
+            const color = ["red", "blue", "red", "green", "blue", "red", "yellow"];
+
+            const count2 = colors.reduce((tem, color) => {
+            tem[color] = (tem[color] || 0) + 1;    // tem["red"]
+            return tem;
+            }, {});
+
+            console.log(count2);
+            */
+
+            // Exercise 4 Show the total age of all useser who active 
+            let total_age = 0;
+            const users = [
+                { name: "Alex", age: 28, status: "active" },
+                { name: "Ben", age: 19, status: "inactive" },
+                { name: "Chloe", age: 35, status: "active" },
+                { name: "Dana", age: 22, status: "inactive" },
+                { name: "Ethan", age: 40, status: "active" },
+                ];
+            for(i = 0 ; i < users.length ; i++){
+                if(users[i].status === 'active')
+                {
+                    total_age = total_age + users[i].age
+                }
+            }
+            console.log(total_age);
+            /*
+              //---------------4 filter , reduce 
+            const users2 = [
+                { name: "Alex", age: 28, status: "active" },
+                { name: "Ben", age: 19, status: "inactive" },
+                { name: "Chloe", age: 35, status: "active" },
+                { name: "Dana", age: 22, status: "inactive" },
+                { name: "Ethan", age: 40, status: "active" },
+                ];
+
+                const total_age2 = users
+                .filter(user => user.status === "active")
+                .reduce((sum, user) => sum + user.age, 0);
+
+                console.log(total_age2); // 103
+
+            */
+
+            //5 show the price by ID on the new array 
+            const price = [];
+            const inventory = [
+                { id: 101, name: "Laptop Stand", price: 45.00 },
+                { id: 202, name: "Wireless Mouse", price: 25.50 },
+                { id: 303, name: "Mechanical Keyboard", price: 120.00 },
+            ];
+            const shoppingCart = [202, 101, 202];
+
+            // Loop through the shopping cart
+            for (let i = 0; i < shoppingCart.length; i++) {
+                const cartId = shoppingCart[i];
+
+                // Find matching item in inventory
+                for (let j = 0; j < inventory.length; j++) {
+                    if (inventory[j].id === cartId) {
+                        price.push(inventory[j].price);
+                    }
+                }
+            }
+
+            console.log(price); 
+            /*
+               //----------------5  use map and find
+            const inventory2 = [
+                { id: 101, name: "Laptop Stand", price: 45.00 },
+                { id: 202, name: "Wireless Mouse", price: 25.50 },
+                { id: 303, name: "Mechanical Keyboard", price: 120.00 },
+                ];
+
+                const shoppingCart2 = [202, 101, 202];
+
+                const price2 = shoppingCart2.map(cartId => {                  // map check the cardID 
+                return inventory.find(item => item.id === cartId).price;     // compare the id and item 
+                });
+
+                console.log(price2); // [25.50, 45.00, 25.50]
+            */
+
+        </script>
+    </body>
+</html>

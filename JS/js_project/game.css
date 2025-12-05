@@ -1,0 +1,16 @@
+body{
+   margin: 0;
+   font-weight: bold;
+
+}
+button{
+    padding-top:30px ;
+    padding-left: 20px;
+}
+.container {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

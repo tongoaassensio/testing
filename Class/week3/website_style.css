@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+    padding: 10px 20px;
+    background-color:rgb(25, 157, 25);
+    color: white;
+}
+.header  {
+    text-align: center;
+}
+.link {
+    display: flex;
+    padding: 8px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    gap: 40px;
+    justify-content: center;
+
+}
+.link a {
+    color: white;
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.container {
+    width: 900px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px black;
+    padding: 10px 10px;
+    border-radius: 7px;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.10);
+
+     margin-bottom: 12px;
+}
+h2 , h3 , h4{
+    font-size: 25px;
+    color: #0078ff;
+}
+.table {
+    width: 900px;
+}
+.table td {
+    border-color: gray;
+}
+th, td {
+    border: 1px solid #ddd;      /* border around each cell */
+    padding: 10px;               /* space inside cells */
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;   /* light gray header */
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse; /* makes borders clean */
+}
+strong {
+    color:#0078ff;
+}
+
+.input {
+    gap: 40px;
+    margin-left: 40px;
+
+}
+label{
+    text-align: left;
+    display: flex;
+    font-weight: bold;
+    font-size: 17px;
+    margin-bottom: 30px;
+    
+}
+input {
+    width: 75%;
+    padding: 30px;
+    border-radius: 7px;
+    text-align: left;
+    margin-left: 60px;
+}
+.input button {
+    width: 82%;
+    padding: 12px;
+    background: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

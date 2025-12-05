@@ -1,0 +1,27 @@
+.flex-container {
+    display: flex;
+    border: 3px dashed #007bff;
+    background-color: #f0f8ff;
+    width: 400px;
+    height: 400px;
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+
+    flex-wrap: nowrap;
+}
+
+.item {
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+   
+}
+
+.item-small { width: 100px; height: 50px; }
+.item-large { width: 150px; height: 100px; }

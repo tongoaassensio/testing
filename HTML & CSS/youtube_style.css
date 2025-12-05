@@ -1,0 +1,21 @@
+.thumnail{
+    width: 300px;
+    display: block;
+}
+.input {
+    font-size: 20px;
+    border-radius: 1px;
+    display: block;
+    
+}
+.vd-tittle {
+
+    width: 300px;
+}
+.preview{
+    display: inline-block; /* Make the Element in the Line Width*/
+    vertical-align: top; /*make the item preview smer knea*/
+    margin-right: 15px;
+    background-color: rgb(244, 211, 234);
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>Student Survey Form</h1>
+        <link rel="stylesheet" href="student_style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <p>Name</p>
+                <input class="box" type="text" placeholder="Enter Your Name">
+            </section>
+
+            <section>
+                <p>Email</p>
+                <input class="box" type="text" placeholder="Enter your Email">
+            </section>
+
+            <section>
+                <p>Age</p>
+                <input class="box" type="text" placeholder="Enter your age">
+            </section>
+
+            <section>
+                <p>Which option best decribe you!</p>
+            <select class="box" name="Student" id="std">
+                <option value="1">Student</option>
+                <option value="2">Employee</option>
+                <option value="3">Developer</option>
+                <option value="4">Doctor</option>
+            </select>
+            </section>
+
+            <section >
+                <p>Would you recommend this course?</p>
+                <form action="">
+                    <input type="radio" value="Yes"> Yes <br>
+                    <input type="radio" value="Yes"> No <br>
+                    <input type="radio" value="Yes"> Maybe <br>
+                </form>
+            </section>
+
+            <section>
+                <p>Language and Framework know (check all that apply) </p>
+                <form action="">
+                    <input type="checkbox">C <br>
+                    <input type="checkbox">C++ <br>
+                    <input type="checkbox">C# <br>
+                    <input type="checkbox">Html <br>
+                    <input type="checkbox">Css <br>
+                    <input type="checkbox">Java Script <br>
+                    <input type="checkbox">React JS <br>
+                    <input type="checkbox">Python<br>
+                    <input type="checkbox">Java<br>
+                    <input type="checkbox">TypeScript<br>
+                    <input type="checkbox">SQL<br>
+                </form>
+            </section>
+
+            <section>
+                <p>Any comment and suggestions here !</p>
+                <input  class="comment" type="text">
+                <button>Send</button>
+            </section>
+        </div>
+    </body>
+</html>

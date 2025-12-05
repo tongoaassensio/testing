@@ -1,0 +1,37 @@
+body
+{
+    margin: 0;
+    background-color: rgb(61, 220, 61);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    margin: 0;
+    margin-bottom: 5px;
+    
+}
+.container {
+    width: 300px;
+    display: block;
+    font-size: 13px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: inset black;
+
+}
+.container p {
+    font-weight: bold;
+}
+.box {
+    width: 100%;
+}
+button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(61, 220, 61);
+    border: none;
+    border-radius: 3px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+    <script>
+        // ----------odd american --------------//
+
+
+        //-----------Multi of number ----------- // 
+        let input = prompt ("Input from the users: ")
+
+        function multi(input)
+        {
+            let show = [];
+            let multiples = [];
+            for(let i = 0; i <= 10 ; i++)
+            {
+                multiples.push(input * i);
+                
+               // show.push(`${input} x ${i} = ${multiples[i]}`)
+               console.log((`${input} x ${i} = ${multiples[i]}`))
+            }
+
+            //return show;
+        }
+
+        let results = multi(input);
+       // console.log(`${results} \n`);
+
+    </script>
+</body>
+</html>

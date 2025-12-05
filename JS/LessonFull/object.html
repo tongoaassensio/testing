@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Objects</title>
+    </head>
+    <body>
+        
+
+        <script>
+
+
+
+            const product2 = {
+                name: 'Shirt',
+                price: '12$',
+                rating: {
+                    stars: 9.0,
+                    count: 87,
+                },
+                fun:function function1(){
+                    console.log('Function inside object');
+                }
+            };
+// how to call object 
+            console.log(product2);
+            console.log(product2.name);
+            console.log(product2['name']);
+// how to call nasted onject 
+            console.log(product2.rating.count);
+            console.log(product2.rating.stars);
+//how to call function inside the object
+            product2.fun();
+            console.log(typeof console);
+            
+// Use JSON
+            console.log(JSON.stringify(product2));
+            console.log(typeof stringify(product2))  
+        </script>
+    </body>
+</html>
