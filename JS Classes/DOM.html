@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <h1>DOM</h1>
+       <link rel="stylesheet" href="Dom.css">
+    </head>
+    <body>
+
+        <!-----Exersise 1------>
+        <p class="my-text" id="text">
+            Click the button to see the paragraph change the color
+        </p>
+        <button onclick="changeColor()"> 
+            Click here
+        </button>
+
+        <!-----Exersise 2------>
+        <br>
+        <p> Click here to see the picture!!!</p>
+        <img id="image-me" src="programming.jpg" alt="" style="width: 300px; padding-bottom: 20px;">
+        <br>
+        <button onclick="changeImage()">
+            Click Here ><
+        </button>
+
+        <!----- Exersise 3---->
+        <h2> To Do List </h2>
+        <div class="container">
+            <input id="value-input" type="text" placeholder="what is in your mind ?" style="width: 200px; height: 50px; text-align: center;">
+                <br>
+            <button id="button-add" onclick="todoListAdd()">Add</button>
+            <button id="button-delete">Delete</button>
+                <br>
+            <p>The list : </p>
+            <ul id = "List"></ul>
+        </div>
+        
+
+
+
+        <script>
+            function changeColor(){
+                let element =  document.querySelector('.my-text');
+        
+                if (element.innerHTML === 'Click the button to see the paragraph change the color')
+                {
+                    element.innerHTML = 'The paragraph is Changed'
+                    element.classList.add('new-class');
+                }else {
+                    element.innerHTML =  'Click the button to see the paragraph change the color';
+                    element.classList.remove('new-class');
+                }
+            }
+
+            function changeImage (){
+                let element2 = document.getElementById("image-me");
+                    
+                if (element2.src.includes("programming.jpg"))
+                    {
+                        element2.src = "rosee.jpg";
+
+                    }else {
+                        element2.src = "programming.jpg"
+                    }
+            }
+
+            function todoListAdd(){
+                let element = document.getElementById("value-input");
+                let storeValue = element.value;
+
+                document.getElementById("List").innerHTML += `<li>${storeValue}</li>`;
+
+
+                // Clear the input text 
+                element.value = '';
+
+            }
+          
+          
+        </script>
+    </body>
+</html>
