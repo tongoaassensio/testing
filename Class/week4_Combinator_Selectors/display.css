@@ -10,10 +10,9 @@
     
 }
 .two {
-    display: inline-block;
+    display: inline;
     gap: 30px;
     padding: 20px;
-    width: 500px;
     background-color: rgb(241, 235, 235);
     
 }
@@ -22,6 +21,42 @@ button {
     margin: 10px;
     background-color: blue;
     border: none;
-
     color: white;
+}
+
+.container {
+    background-color: lightgray;
+   
+
+}
+.float-left {
+    float: left;
+    width: 53%;
+    background-color: lightblue;
+    padding: 6px;
+    
+}
+.relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+}
+
+.flex {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: gray;
+    z-index: 100;
 }

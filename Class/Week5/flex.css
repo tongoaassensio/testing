@@ -7,10 +7,15 @@
 
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     align-content: stretch;
 
     flex-wrap: nowrap;
+   
+}
+div:nth-child(2){
+    order: -1;
+    flex-grow: 2;
 }
 
 .item {

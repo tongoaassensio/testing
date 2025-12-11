@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let wrong = 0;
+let pass = 'Tongan';
+
+while (wrong < 3) {
+    let Mypass = prompt('Input your password: ');
+
+    if (Mypass === pass) {
+        console.log('Password accepted! Welcome!');
+        break;
+    } else {
+        wrong++;
+        console.log('Incorrect password');
+
+        if (wrong === 3) {
+            console.log('Try again in 5 minutes');
+        }
+    }
+}
+</script>
+</body>
+</html>

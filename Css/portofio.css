@@ -42,7 +42,7 @@
     background-color: white;
     border-top: 1px solid gray;
 
-    justify-content: space-between;
+   justify-content: space-between;
 }
 
 .flex-box-container{
@@ -72,16 +72,19 @@ h2{
 
 .flexbox-footer2{
     padding-top: 10px;
+    gap: 30px;
 }
 @media(max-width: 600px) {
-    .footer{
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
     }
     .flexbox-footer2{
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
     }
-
 }

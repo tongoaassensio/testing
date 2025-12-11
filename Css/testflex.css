@@ -26,7 +26,6 @@ body {
     align-items: center;
     justify-content:space-around;
     color: white;
-    margin-right: 27px;
     flex: 3;
 
 }
@@ -50,7 +49,7 @@ body {
 .images{
     width: 260px;
     height: 180px;
-    border-radius: 8px 8 px;
+    border-radius: 8px 8px 0 0;
 }
 
 .box{
@@ -58,7 +57,7 @@ body {
     width: 260px;
     background-color: white;
     border-radius: 8px;
-   
+    overflow: hidden;
     box-shadow:0px 2px 4px rgba(0,0,0,0.2);
 }
 h1{

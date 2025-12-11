@@ -6,3 +6,9 @@ a:link {
 a:hover {
     background-color: gray;
 }
+p::first-line{
+    font-weight: bold;
+}
+a[href*="https://www.facebook.com/"]{
+    background-color: gray;
+}
